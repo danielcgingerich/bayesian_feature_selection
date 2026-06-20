@@ -61,7 +61,7 @@ $$\nabla_{\beta_j} \log P (\beta_j | \tau_1^2 , \tau_0^2 ) = - \beta_j \frac{
 \pi \text{N} ( \beta_j | 0, \tau_1^2 ) + (1 - \pi) \text{N} ( \beta_j | 0, \tau_0^2 ) 
 }$$
 
-Given our current guesses of the variance components, we find an initial MAP estimate $\hat{\beta}(\sigma^2, \delta^2 )$ using the R function \texttt{optim} with \texttt{method = "BFGS"}, supplying the gradient of the likelihood and prior shown above. 
+Given our current guesses of the variance components, we find an initial MAP estimate $\hat{\beta}(\sigma^2, \delta^2 )$ using the R function `optim` with `method = "BFGS"`, supplying the gradient of the likelihood and prior shown above. 
 
 ### Hessian calculation
 We compute the Hessian at $\hat{\beta}$, which serves as a rough initial approximation of the Fisher information. The Hessian of the likelihood component is: 
